@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .flower {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+        }
+        .petal {
+            width: 60px;
+            height: 30px;
+            background-color: lightcoral;
+            border-radius: 30px;
+            position: absolute;
+        }
+        .petal1 { top: -15px; left: 20px; }
+        .petal2 { top: 20px; left: -15px; transform: rotate(90deg); }
+        .petal3 { top: 20px; right: -15px; transform: rotate(270deg); }
+        .petal4 { bottom: -15px; left: 20px; transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Flower Game!</h1>
+    <div class="flower">
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+    </div>
+    <button onclick="alert('You clicked the flower!')">Click the Flower!</button>
+</body>
+</html>
